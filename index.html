@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="refresh" content="15">
+  <title>Water and Wind Status</title>
+  <link type="text/css" href="asset/css.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="row container4">
+    <h1 style="text-align: center">Water and Wind Status </h1>
+      <div class=" col-sm-6 col-xl-6 mb-6">
+          <div class="card border-0 shadow">
+              <div class="card-body">
+                  <div class="row d-block d-xl-flex align-items-center">
+                      <div class=" col-xl-4 text-xl-center mb-3 mb-xl-0 d-flex align-items-center justify-content-xl-center">
+                        <div class="icon-shape icon-shape-secondary rounded me-4 me-sm-0">
+                          <img src="asset/img/water.png" style="width:40%;height:40%;">
+
+                        </div>
+                      </div>
+                      <div class=" col-xl-7 px-xl-0">
+                          <div class="d-none d-sm-block">
+                              <h2 class="h6 text-gray-400 mb-0">Water Status</h2>
+                              <h3 class="fw-extrabold mb-2">Status : {{.waterStatus}}</h3>
+                          </div>
+                          <small class="d-flex align-items-center text-gray-500">
+                            Tinggi : {{.waterValue}} meter 
+                          </small> 
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class=" col-sm-6 col-xl-6 mb-6">
+          <div class="card border-0 shadow">
+              <div class="card-body">
+                  <div class="row d-block d-xl-flex align-items-center">
+                      <div class=" col-xl-4 text-xl-center mb-3 mb-xl-0 d-flex align-items-center justify-content-xl-center">
+                          <div class="icon-shape icon-shape-secondary rounded me-4 me-sm-0">
+                            <img src="asset/img/wind.png" style="width:40%;height:40%;">
+
+                          </div>
+                      </div>
+                      <div class=" col-xl-7 px-xl-0">
+                          <div class="d-none d-sm-block">
+                              <h2 class="h6 text-gray-400 mb-0">Wind Status</h2>
+                              <h3 class="fw-extrabold mb-2">Status : {{.windStatus}}</h3>
+                          </div>
+                          <small class="d-flex align-items-center text-gray-500">
+                            Kecepatan : {{.windValue}} meter/detik
+                          </small> 
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</body>
+</html>
